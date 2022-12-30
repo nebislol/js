@@ -1,0 +1,40 @@
+//conexion con todos los html//
+@import "segundarios/index";
+@import "segundarios/contacto";
+@import "segundarios/intro_servicios";
+@import "segundarios/presentacion";
+@import "segundarios/servicios";
+@import "segundarios/header";
+@import "segundarios/main";
+@import "segundarios/footer";
+@import "segundarios/queries";
+
+
+
+//conexion con utilities//
+@import "utilities/reset";
+@import "utilities/variables";
+
+
+//nesting//
+/*estilo body evitar scroll lateral*/
+body{
+    min-height:100vh;
+    width: 100%;
+    overflow-x: hidden;
+    /* propiedades del contenedor padre */
+    .contenedor{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns:repeat(3,1fr) ;
+        grid-template-rows:(3, 1fr 2fr 1fr) ;
+        font-family:'Merriweather', serif;
+        /* grid template areas*/
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+}
+
+

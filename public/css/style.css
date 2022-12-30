@@ -1,0 +1,776 @@
+@charset "UTF-8";
+/* estilos del main*/
+main {
+  grid-area: main;
+  /* estilo tamaño Banner principal imagen central */ }
+  main .social ul li a .icon-redes {
+    width: 18%;
+    margin-top: 10px; }
+  main .contenedorAnimado {
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-bottom: 2rem;
+    text-shadow: black 6px 6px 2px; }
+  main .contenedorAnimado h3 {
+    font-size: 60pt;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: #ebf1f9; }
+  main .contenedorAnimado h3 ul {
+    list-style: none;
+    padding-left: 10px;
+    margin: 0;
+    font-size: 50pt;
+    animation: cambiar 10s infinite;
+    line-height: 90px; }
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0; }
+  24% {
+    margin-top: 0; }
+  25% {
+    margin-top: -90px; }
+  49% {
+    margin-top: -90px; }
+  50% {
+    margin-top: -180px; }
+  74% {
+    margin-top: -180px; }
+  75% {
+    margin-top: -270px; }
+  95% {
+    margin-top: -270px; }
+  96% {
+    margin-top: 0; }
+  100% {
+    margin-top: 0; } }
+  main .image-container {
+    width: 100%;
+    min-height: 100%; }
+
+main {
+  /*estilos de la caja formulario contacto */
+  /*estilos de los logos de redes sociales solo para html contacto*/ }
+  main .cajaFormulario {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem; }
+    main .cajaFormulario .formulario {
+      width: 600px;
+      height: 270px;
+      text-align: center; }
+      main .cajaFormulario .formulario .tituloformulario {
+        text-align: center; }
+      main .cajaFormulario .formulario .imputFormulario {
+        text-align: left; }
+        main .cajaFormulario .formulario .imputFormulario .titulosImput {
+          font-size: 10pt; }
+      main .cajaFormulario .formulario .btn {
+        margin-top: 1rem; }
+  main .socialContacto ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none; }
+    main .socialContacto ul li a .icon-redes {
+      width: 30%;
+      margin-top: 7rem;
+      margin-left: 5rem; }
+
+/*estilos de tarjetas*/
+.mainTarjetas .tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .mainTarjetas .tarjetas .card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px;
+    transition: transform .1s; }
+    .mainTarjetas .tarjetas .card:hover {
+      transform: scale(1.1); }
+    .mainTarjetas .tarjetas .card .card-body .card-title {
+      font-size: 16.5pt; }
+    .mainTarjetas .tarjetas .card .card-body .card-text {
+      text-align: justify;
+      font-size: 10pt; }
+
+/* --- PRESENTACION.HTML --- */
+/* Posicionamiento Imagenes y video */
+main .cajaPresentacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 600px;
+  align-items: center; }
+  main .cajaPresentacion .imgSolucionando {
+    align-self: end; }
+    main .cajaPresentacion .imgSolucionando img {
+      width: 100%; }
+  main .cajaPresentacion .imgRendimiento {
+    align-self: start; }
+    main .cajaPresentacion .imgRendimiento img {
+      width: 100%; }
+
+main .presentacionEquipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* posicion de foto del team jrl*/ }
+  main .presentacionEquipo div {
+    text-align: center;
+    align-items: center;
+    width: 600px;
+    /* Team JRL */
+    /* Edicion de texto momentaneo team JRL */ }
+    main .presentacionEquipo div .teamTitulo {
+      color: #002B5B;
+      font-size: 30pt;
+      font-family: 'Merriweather', serif; }
+    main .presentacionEquipo div .conceptoEquipo1 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: justify;
+      line-height: 1.6;
+      box-sizing: border-box; }
+    main .presentacionEquipo div .conceptoEquipo2 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: justify;
+      line-height: 1.6;
+      box-sizing: border-box; }
+    main .presentacionEquipo div .conceptoEquipo3 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: justify;
+      line-height: 1.6;
+      box-sizing: border-box; }
+    main .presentacionEquipo div .imgEquipo img {
+      width: 300px;
+      position: relative;
+      margin-left: 30rem; }
+
+main .contenedorServicios {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  main .contenedorServicios .cajaConsultoria {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 700px;
+    height: 400px;
+    transition: transform .1s; }
+    main .contenedorServicios .cajaConsultoria:hover {
+      transform: scale(1.1); }
+    main .contenedorServicios .cajaConsultoria .tituloServicio1 {
+      font-size: 20pt;
+      text-align: right;
+      margin-right: 7rem;
+      padding-top: 2rem; }
+    main .contenedorServicios .cajaConsultoria div {
+      display: flex;
+      flex-direction: row; }
+      main .contenedorServicios .cajaConsultoria div .imgConsultoriaP {
+        padding: 1.5rem;
+        padding-top: 0%;
+        width: 300px;
+        height: 300px; }
+      main .contenedorServicios .cajaConsultoria div .parrafoConsultoria {
+        padding: 2rem;
+        font-size: 10pt;
+        text-align: justify; }
+      main .contenedorServicios .cajaConsultoria div .temasServicio {
+        position: absolute;
+        margin-top: 18.5rem;
+        margin-left: 3rem; }
+  main .contenedorServicios .cajaInnovacion {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 700px;
+    height: 400px;
+    transition: transform .1s; }
+    main .contenedorServicios .cajaInnovacion:hover {
+      transform: scale(1.1); }
+    main .contenedorServicios .cajaInnovacion .tituloServicio2 {
+      font-size: 20pt;
+      text-align: right;
+      margin-right: 24rem;
+      padding-top: 2rem; }
+    main .contenedorServicios .cajaInnovacion div {
+      display: flex;
+      flex-direction: row-reverse; }
+      main .contenedorServicios .cajaInnovacion div .imgInnovacionP {
+        padding: 1.5rem;
+        padding-top: 0%;
+        width: 300px;
+        height: 300px; }
+      main .contenedorServicios .cajaInnovacion div p {
+        padding: 2rem;
+        font-size: 10pt;
+        text-align: justify; }
+  main .contenedorServicios .cajaMarketing {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 16px;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 700px;
+    height: 400px;
+    transition: transform .1s; }
+    main .contenedorServicios .cajaMarketing:hover {
+      transform: scale(1.1); }
+    main .contenedorServicios .cajaMarketing .tituloServicio3 {
+      font-size: 20pt;
+      text-align: right;
+      margin-right: 7rem;
+      padding-top: 2rem; }
+    main .contenedorServicios .cajaMarketing div {
+      display: flex;
+      flex-direction: row; }
+      main .contenedorServicios .cajaMarketing div .imgMarketingP {
+        padding: 1.5rem;
+        padding-top: 0%;
+        width: 300px;
+        height: 300px; }
+      main .contenedorServicios .cajaMarketing div p {
+        padding: 2rem;
+        font-size: 10pt;
+        text-align: justify; }
+
+/*estilos del header*/
+header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
+  border-bottom: solid 1px #dadaf5;
+  /* estilo del header padre flex */ }
+  header .padre-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    /*estilos del logo en el header*/ }
+    header .padre-flex .logoTitulo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center; }
+      header .padre-flex .logoTitulo .logoEncabezado
+a {
+        /* estilo del logo */ }
+        header .padre-flex .logoTitulo .logoEncabezado
+a img {
+          width: 50px;
+          margin-bottom: 5px; }
+      header .padre-flex .logoTitulo .tituloEncabezado h1 {
+        /* estilo titulo empresa */ }
+        header .padre-flex .logoTitulo .tituloEncabezado h1 a {
+          text-decoration: none;
+          list-style: none;
+          color: #002B5B;
+          font-size: 18pt;
+          flex-wrap: nowrap;
+          display: flex;
+          margin-top: 10px;
+          margin-left: 10px;
+          width: 200px; }
+    header .padre-flex section .menu-hamburguesa {
+      margin-left: 14rem; }
+      header .padre-flex section .menu-hamburguesa div h2 {
+        font-size: 10pt; }
+        header .padre-flex section .menu-hamburguesa div h2 ul li a {
+          transition: transform .1s; }
+          header .padre-flex section .menu-hamburguesa div h2 ul li a:hover {
+            background-color: #d2c3f5; }
+
+/*estilos de lista redes en el main para destok*/
+main {
+  background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f); }
+  main .social ul {
+    position: fixed;
+    padding-top: 15rem;
+    padding-left: 0.5rem; }
+    main .social ul li {
+      text-decoration: none;
+      list-style: none;
+      margin-top: 0.2rem; }
+
+/*estilos del footer*/
+footer {
+  grid-area: footer;
+  background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f);
+  text-align: center;
+  border-top: solid 1px #dadaf5;
+  /*edicion del copyricht */
+  /* estilo y posicion imagen flotante Whatsapp */ }
+  footer section .copyPrincipal .tamanoCopy {
+    color: #ebf1f9;
+    font-size: 13pt; }
+  footer section div .logoWhatsapp {
+    position: fixed;
+    width: 4%;
+    animation-name: nombre;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    top: 37rem;
+    right: 0.5rem;
+    width: 5%; }
+
+@keyframes nombre {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(7px); }
+  100% {
+    transform: translateY(0px); } }
+
+@media (max-width: 576px) {
+  body {
+    min-height: 100vh;
+    width: 100%; }
+    body header div {
+      /*Logo y titulo*/
+      /*menu servicios con bootstrap*/ }
+      body header div .logoTitulo {
+        display: flex;
+        /*Titulo principal nombre empresa*/ }
+        body header div .logoTitulo .logoEncabezado {
+          width: 100%; }
+        body header div .logoTitulo .tituloEncabezado {
+          display: flex;
+          font-size: 10pt;
+          width: 100%; }
+          body header div .logoTitulo .tituloEncabezado h1 a {
+            width: 200px;
+            font-size: 18pt;
+            display: flex; }
+      body header div .menu .menu-hamburguesa {
+        top: 0;
+        position: absolute;
+        right: 10px; }
+        body header div .menu .menu-hamburguesa button .navbar-toggler-icon {
+          filter: brightness(0) invert(1); }
+        body header div .menu .menu-hamburguesa .menuDestok {
+          display: none; }
+    body header .colapsomobile h2 {
+      font-size: 8pt;
+      text-align: center; }
+      body header .colapsomobile h2 .navbar-nav {
+        width: 100%;
+        position: absolute;
+        background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f); }
+        body header .colapsomobile h2 .navbar-nav .nav-item {
+          border: solid white 1px; }
+    body .flex-container {
+      flex-flow: wrap; }
+    body main {
+      min-height: 100vh;
+      /*imagenes redes html contacto*/
+      /*estilo de imagen de background planeta*/
+      /*estilos y efecto de el texto*/
+      /*estilos html contacto mobile*/
+      /*estilos html servicio mobile*/
+      /*estilos de html quienes somos*/ }
+      body main .social ul {
+        display: none; }
+      body main .socialContacto ul li a .icon-redes {
+        margin-left: 0; }
+      body main .image-container img {
+        object-fit: cover;
+        min-height: 100vh; }
+      body main .contenedorAnimado {
+        width: 320px;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body main .contenedorAnimado h3 {
+          background-color: rgba(0, 8, 62, 0.4);
+          border-radius: 10px;
+          text-align: center;
+          font-size: 30pt;
+          display: flex;
+          flex-direction: column; }
+          body main .contenedorAnimado h3 ul {
+            text-align: justify;
+            animation: none;
+            line-height: 2rem; }
+            body main .contenedorAnimado h3 ul li {
+              font-size: 12pt; }
+      body main .cajaFormulario {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem; }
+        body main .cajaFormulario .formulario {
+          width: 250px;
+          height: 270px;
+          text-align: center; }
+          body main .cajaFormulario .formulario .tituloformulario {
+            text-align: center; }
+          body main .cajaFormulario .formulario .imputFormulario {
+            text-align: left;
+            font-size: 5pt; }
+          body main .cajaFormulario .formulario .btn {
+            margin-top: 1rem; }
+      body main .contenedorServicios {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center; }
+        body main .contenedorServicios .cajaConsultoria {
+          border-radius: 15px;
+          margin-bottom: 0.5rem;
+          width: 350px;
+          height: 500px; }
+          body main .contenedorServicios .cajaConsultoria .tituloServicio1 {
+            font-size: 12pt;
+            text-decoration: underline;
+            text-align: center;
+            margin-right: 0;
+            padding-top: 0; }
+          body main .contenedorServicios .cajaConsultoria div {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            body main .contenedorServicios .cajaConsultoria div .imgConsultoriaP {
+              padding: 1.5rem;
+              padding: 0%;
+              width: 150px;
+              height: 150px; }
+            body main .contenedorServicios .cajaConsultoria div p {
+              padding-left: 20px;
+              padding-right: 20px;
+              font-size: 8pt;
+              text-align: justify; }
+        body main .contenedorServicios .cajaInnovacion {
+          border-radius: 15px;
+          margin-bottom: 0.5rem;
+          width: 350px;
+          height: 500px; }
+          body main .contenedorServicios .cajaInnovacion .tituloServicio2 {
+            font-size: 12pt;
+            text-decoration: underline;
+            text-align: center;
+            margin-right: 0;
+            padding-top: 0; }
+          body main .contenedorServicios .cajaInnovacion div {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            body main .contenedorServicios .cajaInnovacion div .imgInnovacionP {
+              padding: 0;
+              padding-top: 0%;
+              width: 150px;
+              height: 150px; }
+            body main .contenedorServicios .cajaInnovacion div p {
+              padding-left: 20px;
+              padding-right: 20px;
+              font-size: 8pt;
+              text-align: justify; }
+        body main .contenedorServicios .cajaMarketing {
+          border-radius: 15px;
+          margin-bottom: 0.5rem;
+          width: 350px;
+          height: 500px; }
+          body main .contenedorServicios .cajaMarketing .tituloServicio3 {
+            font-size: 12pt;
+            text-decoration: underline;
+            text-align: center;
+            margin-right: 0;
+            padding-top: 0; }
+          body main .contenedorServicios .cajaMarketing div {
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            body main .contenedorServicios .cajaMarketing div .imgMarketingP {
+              padding: 0;
+              padding-top: 0%;
+              width: 150px;
+              height: 150px; }
+            body main .contenedorServicios .cajaMarketing div p {
+              padding-left: 20px;
+              padding-right: 20px;
+              font-size: 8pt;
+              text-align: justify; }
+      body main .cajaPresentacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: none;
+        height: 100vh;
+        align-items: center; }
+        body main .cajaPresentacion .imgSolucionando {
+          display: none; }
+        body main .cajaPresentacion .imgRendimiento {
+          display: none; }
+        body main .cajaPresentacion .videoPresentacion iframe {
+          width: 390px;
+          height: 200px;
+          position: absolute;
+          margin-left: 0.5rem;
+          top: 9rem; }
+      body main .presentacionEquipo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* posicion de foto del team jrl*/ }
+        body main .presentacionEquipo div {
+          text-align: center;
+          align-items: center;
+          width: 400px;
+          position: absolute;
+          top: 27rem;
+          /* Team JRL */
+          /* Edicion de texto momentaneo team JRL */ }
+          body main .presentacionEquipo div .teamTitulo {
+            color: #002B5B;
+            font-size: 10pt;
+            font-family: 'Merriweather', serif; }
+          body main .presentacionEquipo div .conceptoEquipo1 {
+            font-size: 10pt;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            text-align: justify;
+            line-height: 1.6;
+            box-sizing: border-box; }
+          body main .presentacionEquipo div .conceptoEquipo2 {
+            display: none; }
+          body main .presentacionEquipo div .conceptoEquipo3 {
+            display: none; }
+          body main .presentacionEquipo div .imgEquipo {
+            display: none; }
+    body .mainTarjetas .tarjetas .card {
+      margin-top: 2rem;
+      margin-bottom: 1rem; }
+    body footer section {
+      height: 0.8rem; }
+      body footer section .copyPrincipal .tamanoCopy {
+        font-size: 8pt;
+        padding-top: 0.1rem; }
+      body footer section div .logoWhatsapp {
+        top: 40rem;
+        right: 0;
+        width: 10%; } }
+
+@media (max-width: 990px) and (min-width: 700px) {
+  body {
+    min-height: 100vh;
+    width: 100%;
+    /*estilos de html presentacion quienes somos*/ }
+    body header div {
+      /*Logo y titulo*/
+      /*menu servicios con bootstrap*/ }
+      body header div .logoTitulo {
+        display: flex;
+        /*Titulo principal nombre empresa*/ }
+        body header div .logoTitulo .logoEncabezado {
+          width: 100%; }
+        body header div .logoTitulo .tituloEncabezado {
+          display: flex;
+          font-size: 10pt;
+          width: 100%; }
+          body header div .logoTitulo .tituloEncabezado h1 a {
+            width: 200px;
+            font-size: 18pt;
+            display: flex; }
+      body header div .menu .menu-hamburguesa {
+        top: 0;
+        position: absolute;
+        right: 10px; }
+        body header div .menu .menu-hamburguesa button .navbar-toggler-icon {
+          filter: brightness(0) invert(1); }
+        body header div .menu .menu-hamburguesa .menuDestok {
+          display: none; }
+    body header .collapse h2 {
+      font-size: 10pt;
+      text-align: center; }
+      body header .collapse h2 .navbar-nav {
+        width: 100%;
+        position: absolute;
+        background-image: linear-gradient(to right, #d2c3f5, #459df6, #11385f); }
+        body header .collapse h2 .navbar-nav .nav-item {
+          border: solid white 1px; }
+    body .flex-container {
+      flex-flow: wrap; }
+    body main {
+      min-height: 100vh;
+      overflow-x: hidden; }
+      body main .image-container img {
+        object-fit: cover;
+        min-height: 100vh; }
+      body main .contenedorAnimado {
+        width: 320px;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body main .contenedorAnimado h3 {
+          background-color: rgba(0, 8, 62, 0.4);
+          border-radius: 10px;
+          text-align: center;
+          font-size: 30pt;
+          display: flex;
+          flex-direction: column; }
+          body main .contenedorAnimado h3 ul {
+            text-align: justify;
+            animation: none;
+            line-height: 2rem; }
+            body main .contenedorAnimado h3 ul li {
+              font-size: 12pt; }
+    body .mainTarjetas {
+      overflow-x: hidden; }
+      body .mainTarjetas .tarjetas .card {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        margin-left: 2rem; }
+    body .cajaPresentacion .imgSolucionando {
+      align-self: end; }
+      body .cajaPresentacion .imgSolucionando img {
+        width: 250px; }
+    body .cajaPresentacion .imgRendimiento {
+      align-self: start; }
+      body .cajaPresentacion .imgRendimiento img {
+        width: 250px; }
+    body .cajaPresentacion .videoPresentacion iframe {
+      width: 490px;
+      height: 260px;
+      position: absolute;
+      top: 13rem;
+      left: 10rem; }
+    body .presentacionEquipo div .imgEquipo img {
+      width: 220px;
+      position: relative;
+      margin-left: 29rem; }
+    body footer section {
+      height: 0.8rem; }
+      body footer section .copyPrincipal .tamanoCopy {
+        font-size: 8pt;
+        padding-top: 0.1rem; }
+      body footer section div .logoWhatsapp {
+        top: 40rem;
+        right: 1rem;
+        width: 6%;
+        animation-name: nombre;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
+  @keyframes nombre {
+    0% {
+      transform: translateY(0); }
+    50% {
+      transform: translateY(7px); }
+    100% {
+      transform: translateY(0px); } } }
+
+@media (min-width: 1000px) {
+  body {
+    overflow-x: hidden; }
+    body header .colapsomobile {
+      display: none; }
+    body main {
+      grid-area: main;
+      min-height: 100vh;
+      /* estilo tamaño Banner principal imagen central */ }
+      body main .image-container img {
+        object-fit: cover;
+        min-height: 100vh; }
+      body main .contenedorAnimado {
+        width: 800px;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 15px;
+        padding-bottom: 2rem;
+        text-shadow: black 6px 6px 2px; }
+        body main .contenedorAnimado h3 {
+          font-size: 25pt;
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          color: #ebf1f9; }
+          body main .contenedorAnimado h3 ul {
+            list-style: none;
+            padding-left: 10px;
+            margin: 0;
+            font-size: 25pt;
+            animation: cambiar 10s infinite;
+            line-height: 45px; }
+  @keyframes cambiar {
+    0% {
+      margin-top: 0; }
+    24% {
+      margin-top: 0; }
+    25% {
+      margin-top: -45px; }
+    49% {
+      margin-top: -45px; }
+    50% {
+      margin-top: -90px; }
+    74% {
+      margin-top: -90px; }
+    75% {
+      margin-top: -135px; }
+    95% {
+      margin-top: -135px; }
+    96% {
+      margin-top: 0; }
+    100% {
+      margin-top: 0; } }
+    body .mainTarjetas .tarjetas .card {
+      margin-top: 10rem;
+      margin-bottom: 5rem; }
+    body .mainTarjetas .social ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+      position: relative;
+      padding-top: 0; }
+      body .mainTarjetas .social ul li a .icon-redes {
+        width: 30%;
+        margin-top: 2rem;
+        margin-left: 4.5rem; } }
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilo body evitar scroll lateral*/
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  /* propiedades del contenedor padre */ }
+  body .contenedor {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3, 1fr 2fr 1fr;
+    font-family: 'Merriweather', serif;
+    /* grid template areas*/
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; }

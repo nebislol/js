@@ -1,0 +1,40 @@
+@import '../utilities/variables';
+
+
+//nesting//
+/*estilos del footer*/
+footer{
+    grid-area: footer;
+    background-image: linear-gradient($color-header);
+    text-align: center;
+    border-top: solid 1px $border;
+    /*edicion del copyricht */
+    section {
+        .copyPrincipal{
+            .tamanoCopy{    
+                color: $blanco;
+                font-size: 13pt;
+            } 
+        }
+    }
+    /* estilo y posicion imagen flotante Whatsapp */
+    section{ 
+        div{ 
+            .logoWhatsapp{
+                position: fixed;
+                width: 4%;
+                animation-name: nombre;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                top: 37rem; 
+                right: 0.5rem;
+                width: 5%;
+                @keyframes nombre {
+                    0% {transform: translateY(0); }
+                    50% {transform: translateY(7px); }
+                    100% {transform: translateY(0px); } 
+                }
+            }
+        }
+    }
+}

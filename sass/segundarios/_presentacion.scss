@@ -1,0 +1,73 @@
+/* --- PRESENTACION.HTML --- */
+/* Posicionamiento Imagenes y video */
+
+main{
+    .cajaPresentacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 600px;
+        align-items: center;
+        .imgSolucionando{
+            align-self: end;
+            img{
+                width: 100%;
+            }
+        }
+        .imgRendimiento{
+            align-self: start;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .presentacionEquipo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* posicion de foto del team jrl*/
+        div{
+            text-align: center;
+            align-items: center;
+            width: 600px;
+            /* Team JRL */
+            .teamTitulo{
+                color: #002B5B;
+                font-size: 30pt;
+                font-family:'Merriweather', serif;
+            }
+            /* Edicion de texto momentaneo team JRL */
+            .conceptoEquipo1 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                text-align: justify;
+                line-height: 1.6;
+                box-sizing:border-box;
+            }
+            .conceptoEquipo2 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                text-align: justify;
+                line-height: 1.6;
+                box-sizing:border-box;
+            }
+            .conceptoEquipo3 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                text-align: justify;
+                line-height: 1.6;
+                box-sizing:border-box;
+            }
+            .imgEquipo{
+                img{
+                    width: 300px;
+                    position: relative;
+                    margin-left: 30rem;
+                }
+            }
+        }
+    }  
+    
+}
+
+

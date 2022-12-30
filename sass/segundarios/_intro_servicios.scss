@@ -1,0 +1,29 @@
+@import "../utilities/variables";
+
+//nestin//
+/*estilos de tarjetas*/
+.mainTarjetas{
+    .tarjetas{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-wrap: wrap;
+            .card{
+                text-align: center;
+                box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 16px;
+                transition: transform .1s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                .card-body{
+                    .card-title{
+                        font-size: 16.5pt;
+                    } 
+                    .card-text{
+                        text-align: justify;
+                        font-size: 10pt;
+                    }
+                }
+            }
+    }
+}

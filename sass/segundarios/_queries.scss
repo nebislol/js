@@ -1,0 +1,591 @@
+@import "../utilities/variables";
+
+@media (max-width: 576px) {
+    body{
+    min-height:100vh;
+    width: 100%;
+        header{
+            div{
+                /*Logo y titulo*/
+                .logoTitulo{
+                    display: flex;
+                    .logoEncabezado{ 
+                        width: 100%;
+                    }
+                    /*Titulo principal nombre empresa*/
+                    .tituloEncabezado{
+                        display: flex;
+                        font-size: 10pt;
+                        width: 100%;
+                        h1{
+                            a{
+                            width: 200px;
+                            font-size: 18pt;
+                            display: flex;
+                            }
+                        }
+                        
+                    }
+                }
+                /*menu servicios con bootstrap*/
+                .menu{
+                    .menu-hamburguesa{
+                        top: 0;
+                        position: absolute;
+                        right: 10px;
+                        button{
+                            .navbar-toggler-icon{
+                                filter: brightness(0) invert(1);
+                            }  
+                        }
+                        .menuDestok{
+                            display: none;
+                        }
+                    }       
+                }  
+            }
+            .colapsomobile{
+                h2{
+                    font-size: 8pt;
+                    text-align: center;
+                    .navbar-nav{
+                        width: 100%;
+                        position: absolute;
+                        background-image:linear-gradient($color-header);
+                        .nav-item{
+                            border:  solid white 1px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .flex-container{
+            flex-flow: wrap;
+            }
+        main{
+            min-height: 100vh;
+            .social {
+                ul{
+                    display: none;
+                }
+            }
+            /*imagenes redes html contacto*/
+            .socialContacto{
+                ul{
+                    li{
+                        a{
+                            .icon-redes{
+                            margin-left: 0;
+                            }
+                        }
+                    }
+                }         
+            }
+            /*estilo de imagen de background planeta*/
+            .image-container {
+                img {
+                    object-fit:cover;
+                    min-height: 100vh;
+                    
+                }
+            }
+            /*estilos y efecto de el texto*/
+            .contenedorAnimado{
+                width: 320px;
+                overflow:visible;
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                h3{
+                    background-color: rgba(0, 8, 62, 0.4);
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 30pt;
+                    display: flex;
+                    flex-direction: column;
+                    ul{
+                        text-align: justify;
+                        animation: none;
+                        line-height:2rem;
+                        li{
+                            font-size: 12pt;
+                        }
+                    }
+                }
+            }
+            /*estilos html contacto mobile*/
+            .cajaFormulario{
+                display: flex;
+                justify-content: center;
+                margin-top: 4rem;
+                .formulario{
+                    width: 250px;
+                    height: 270px;
+                    text-align: center;
+                        .tituloformulario{
+                            text-align: center;
+                        }
+                        .imputFormulario{
+                            text-align: left;
+                            font-size: 5pt;
+                        }
+                        .btn{
+                            margin-top: 1rem;
+                        }
+                }
+            }
+            /*estilos html servicio mobile*/
+            .contenedorServicios{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                .cajaConsultoria{
+                    border-radius: 15px;
+                    margin-bottom: 0.5rem;
+                    width: 350px;
+                    height: 500px;
+                    .tituloServicio1{
+                        font-size: 12pt;
+                        text-decoration: underline;
+                        text-align: center;
+                        margin-right: 0;
+                        padding-top: 0;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .imgConsultoriaP{
+                            padding: 1.5rem;
+                            padding: 0%;
+                            width: 150px;
+                            height: 150px;
+                            }
+                        p{
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-size: 8pt;
+                            text-align: justify;
+                        }
+                    }
+                }
+                .cajaInnovacion{
+                    border-radius: 15px;
+                    margin-bottom: 0.5rem;
+                    width: 350px;
+                    height: 500px;
+                    .tituloServicio2{
+                        font-size: 12pt;
+                        text-decoration: underline;
+                        text-align: center;
+                        margin-right: 0;
+                        padding-top: 0;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .imgInnovacionP{
+                            padding: 0;
+                            padding-top: 0%;
+                            width: 150px;
+                            height: 150px;
+                            }
+                        p{
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-size: 8pt;
+                            text-align: justify;
+                        }
+                    }  
+                }
+                .cajaMarketing{
+                    border-radius: 15px;
+                    margin-bottom: 0.5rem;
+                    width: 350px;
+                    height: 500px;
+                    .tituloServicio3{
+                        font-size: 12pt;
+                        text-decoration: underline;
+                        text-align: center;
+                        margin-right: 0;
+                        padding-top: 0;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .imgMarketingP{
+                            padding: 0;
+                            padding-top: 0%;
+                            width: 150px;
+                            height: 150px;
+                            }
+                        p{
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            font-size: 8pt;
+                            text-align: justify;
+                        }
+                    }    
+                }
+            }
+            /*estilos de html quienes somos*/
+            .cajaPresentacion{
+                display: flex;
+                flex-direction: row;
+                justify-content: none;
+                height: 100vh;  
+                align-items: center;
+                .imgSolucionando{
+                    display: none;
+                }
+                .imgRendimiento{
+                    display: none;
+                }
+                .videoPresentacion{
+                    iframe{
+                        width:390px ;
+                        height:200px;
+                        position:absolute;
+                        margin-left: 0.5rem;
+                        top: 9rem;
+                    }
+                }
+            }
+            .presentacionEquipo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* posicion de foto del team jrl*/
+                div{
+                    text-align: center;
+                    align-items: center;
+                    width: 400px;
+                    position: absolute;
+                    top: 27rem;
+                    /* Team JRL */
+                    .teamTitulo{
+                        color: #002B5B;
+                        font-size: 10pt;
+                        font-family:'Merriweather', serif;
+                    }
+                    /* Edicion de texto momentaneo team JRL */
+                    .conceptoEquipo1{
+                        font-size: 10pt;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        text-align: justify;
+                        line-height: 1.6;
+                        box-sizing:border-box;
+                    }
+                    .conceptoEquipo2{
+                        display: none;
+                    }
+                    .conceptoEquipo3{
+                        display: none;
+                    }
+                    .imgEquipo{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .mainTarjetas{
+            .tarjetas{
+                .card{ 
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        footer{
+            section{
+                height: 0.8rem;
+                .copyPrincipal{
+                    .tamanoCopy{ 
+                        font-size: 8pt; 
+                        padding-top: 0.1rem;
+                    } 
+                }
+                div{
+                    .logoWhatsapp{
+                        top: 40rem; 
+                        right: 0;
+                        width: 10%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width:990px) and (min-width: 700px) {
+    body{
+        min-height:100vh;
+        width: 100%;
+            header{
+                div{
+                    /*Logo y titulo*/
+                    .logoTitulo{
+                        display: flex;
+                        .logoEncabezado{ 
+                            width: 100%;
+                        }
+                        /*Titulo principal nombre empresa*/
+                        .tituloEncabezado{
+                            display: flex;
+                            font-size: 10pt;
+                            width: 100%;
+                            h1{
+                                a{
+                                    width: 200px;
+                                    font-size: 18pt;
+                                    display: flex;
+                                }
+                            }
+                            
+                        }
+                    }
+                    /*menu servicios con bootstrap*/
+                    .menu{
+                        .menu-hamburguesa{
+                            top: 0;
+                            position: absolute;
+                            right: 10px;
+                            button{
+                                .navbar-toggler-icon{
+                                    filter: brightness(0) invert(1);
+                                }  
+                            }
+                            .menuDestok{
+                                display: none;
+                            }
+                        }       
+                    }
+                }
+                .collapse{
+                    h2{
+                        font-size: 10pt;
+                        text-align: center;
+                        .navbar-nav{
+                            width: 100%;
+                            position: absolute;
+                            background-image:linear-gradient($color-header);
+                            .nav-item{
+                                border:  solid white 1px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .flex-container {
+                flex-flow: wrap;
+            }
+            main{ 
+                min-height: 100vh;
+                overflow-x: hidden;
+                .image-container{
+                    img{
+                        object-fit:cover;
+                        min-height: 100vh;
+                    }
+                }
+                .contenedorAnimado{
+                    width: 320px;
+                    overflow:visible;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center ;
+                    h3{
+                        background-color: rgba(0, 8, 62, 0.4);
+                        border-radius: 10px;
+                        text-align: center;
+                        font-size: 30pt;
+                        display: flex;
+                        flex-direction: column;
+                        ul{
+                            text-align: justify;
+                            animation: none;
+                            line-height:2rem;
+                            li{
+                                font-size: 12pt;
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+            .mainTarjetas{
+                overflow-x: hidden;
+                .tarjetas{
+                    .card{
+                        margin-top: 2rem;
+                        margin-bottom: 0rem;
+                        margin-left: 2rem;
+                    }
+                }
+            }
+            /*estilos de html presentacion quienes somos*/
+            .cajaPresentacion{
+                .imgSolucionando{
+                    align-self: end;
+                    img{
+                        width: 250px;
+                        
+                    }
+                }
+                .imgRendimiento{
+                    align-self: start;
+                    img{
+                        width: 250px;
+                    }
+                }
+                .videoPresentacion{
+                    iframe{
+                        width:490px ;
+                        height:260px;
+                        position: absolute;
+                        top:13rem;
+                        left: 10rem;
+                    }
+                }
+            }
+            .presentacionEquipo{
+                div{
+                    .imgEquipo{
+                        img{
+                            width: 220px;
+                            position: relative;
+                            margin-left: 29rem;
+                        }
+                    }
+                }
+            }   
+            footer{
+                section{
+                    height: 0.8rem;
+                    .copyPrincipal{
+                        .tamanoCopy{ 
+                            font-size: 8pt; 
+                            padding-top: 0.1rem;
+                        } 
+                    }
+                    div{
+                        .logoWhatsapp{
+                            top: 40rem; 
+                            right: 1rem;
+                            width: 6%;
+                            animation-name: nombre;
+                            animation-duration: 2s;
+                            animation-iteration-count: infinite;
+                            @keyframes nombre {
+                                0% {transform: translateY(0); }
+                                50% {transform: translateY(7px); }
+                                100% {transform: translateY(0px); } }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }    
+
+@media (min-width:1000px){
+    body{
+        overflow-x: hidden;
+        header{
+            .colapsomobile{
+                display: none;
+            }
+        }
+        main{
+            grid-area: main;
+            min-height: 100vh;
+                /* estilo tamaño Banner principal imagen central */
+                .image-container{
+                    img{
+                        object-fit:cover;
+                        min-height: 100vh;
+                    }
+                }
+                .contenedorAnimado{
+                    width: 800px;
+                    height: 45px;
+                    display: flex;
+                    flex-direction: row;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    padding-bottom: 2rem;
+                    text-shadow: black 6px 6px 2px;
+                    h3{
+                        font-size: 25pt;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: row; 
+                        color: $blanco;
+                        ul{
+                            list-style: none;
+                            padding-left: 10px;
+                            margin: 0;
+                            font-size: 25pt;
+                            animation: cambiar 10s infinite;
+                            line-height: 45px;
+                            @keyframes cambiar {
+                                0%{ margin-top:0;}
+                                24%{ margin-top:0;}
+                                25%{ margin-top: -45px;}
+                                49%{ margin-top: -45px;}
+                                50%{ margin-top: -90px;}
+                                74%{ margin-top: -90px;}
+                                75%{ margin-top: -135px;}
+                                95%{ margin-top: -135px;}
+                                96%{ margin-top:0;}
+                                100%{ margin-top:0;}
+                            
+                            }
+                        }
+                    }
+            }
+        }
+        .mainTarjetas{
+            .tarjetas{
+                .card{
+                    margin-top: 10rem;
+                    margin-bottom: 5rem;
+                }
+            }
+            .social{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    list-style: none;
+                    position: relative;
+                    padding-top: 0;
+                    li{
+                        a{
+                            .icon-redes{
+                            width: 30%;
+                            margin-top: 2rem;
+                            margin-left: 4.5rem;
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
+

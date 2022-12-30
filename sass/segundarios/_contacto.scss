@@ -1,0 +1,45 @@
+
+main{
+    /*estilos de la caja formulario contacto */
+    .cajaFormulario{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+        .formulario{
+            width: 600px;
+            height: 270px;
+            text-align: center;
+                .tituloformulario{
+                    text-align: center;
+                }
+                .imputFormulario{
+                    text-align: left;
+                    .titulosImput{
+                        font-size: 10pt;
+                    }
+                }
+                .btn{
+                    margin-top: 1rem;
+                }
+        }
+    }
+    /*estilos de los logos de redes sociales solo para html contacto*/
+    .socialContacto{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            list-style: none;
+            li{
+                a{
+                    .icon-redes{
+                    width: 30%;
+                    margin-top: 7rem;
+                    margin-left: 5rem;
+                    }
+                }
+            }
+        }         
+    } 
+}

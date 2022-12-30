@@ -1,0 +1,19 @@
+@import "../utilities/variables";
+
+//nesting//
+/*estilos de lista redes en el main para destok*/
+main{
+    background-image: linear-gradient($color-header);
+    .social{
+        ul{
+            position: fixed;
+            padding-top: 15rem;
+            padding-left: 0.5rem;
+            li{
+            text-decoration: none;
+            list-style: none;
+            margin-top: 0.2rem;
+            }
+        }
+    }
+} 

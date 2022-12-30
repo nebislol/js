@@ -1,0 +1,113 @@
+@import '../utilities/variables';
+
+main{
+    .contenedorServicios{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .cajaConsultoria{
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 16px;
+            border-radius: 15px;
+            margin: 2rem;
+            width: 700px;
+            height: 400px;
+            transition: transform .1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            .tituloServicio1{
+                font-size: 20pt;
+                text-align: right;
+                margin-right: 7rem;
+                padding-top: 2rem;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                .imgConsultoriaP{
+                    padding: 1.5rem;
+                    padding-top: 0%;
+                    width: 300px;
+                    height: 300px;
+                    }
+                .parrafoConsultoria{
+                    padding: 2rem;
+                    font-size: 10pt;
+                    text-align: justify;
+                }
+                .temasServicio{
+                    position: absolute;
+                    margin-top: 18.5rem;
+                    margin-left: 3rem;
+                }
+            }
+        }
+        .cajaInnovacion{
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 16px;
+            border-radius: 15px;
+            margin: 2rem;
+            width: 700px;
+            height: 400px;
+            transition: transform .1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            .tituloServicio2{
+                font-size: 20pt;
+                text-align: right;
+                margin-right: 24rem;
+                padding-top: 2rem;
+            }
+            div{
+                display: flex;
+                flex-direction: row-reverse;
+                .imgInnovacionP{
+                    padding: 1.5rem;
+                    padding-top: 0%;
+                    width: 300px;
+                    height: 300px;
+                    }
+                p{
+                    padding: 2rem;
+                    font-size: 10pt;
+                    text-align: justify;
+                }
+            }  
+        }
+        .cajaMarketing{
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 16px;
+            border-radius: 15px;
+            margin: 2rem;
+            width: 700px;
+            height: 400px;
+            transition: transform .1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            .tituloServicio3{
+                font-size: 20pt;
+                text-align: right;
+                margin-right: 7rem;
+                padding-top: 2rem;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                .imgMarketingP{
+                    padding: 1.5rem;
+                    padding-top: 0%;
+                    width: 300px;
+                    height: 300px;
+                    }
+                p{
+                    padding: 2rem;
+                    font-size: 10pt;
+                    text-align: justify;
+                }
+            }    
+        }
+    }
+}
