@@ -11,7 +11,7 @@ const pintarServicios = () => {
                           <h3 class="card-title">${servicio.titulo}</h3>
                           <p class="card-text">${servicio.descripcion}</p>
                           <a href="./servicios.html" class="botonS btn btn-dark">Mas informacion</a>
-                          <a class="botonS btn btn-dark"><i id=${servicio.id} class="material-icons agregar">Agregar servicio</i></a>
+                          <a class="botonS btn btn-success"><i id=${servicio.id} class="material-icons agregar">Agregar servicio</i></a>
                       </div>
                       `
     contenedor.appendChild(div);
