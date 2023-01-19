@@ -67,17 +67,22 @@ main {
     height: 50vh;
     display: flex;
     justify-content: center;
+    
     margin-top: 8rem; }
+    
     main .cajaFormulario .formulario {
       width: 600px;
       height: 270px;
       text-align: center; }
       main .cajaFormulario .formulario .tituloformulario {
-        text-align: center; }
+        text-align: center;
+        }
       main .cajaFormulario .formulario .imputFormulario {
         text-align: left; }
         main .cajaFormulario .formulario .imputFormulario .titulosImput {
-          font-size: 10pt; }
+          font-size: 10pt; 
+          padding:10px;}
+          
       main .cajaFormulario .formulario .btn {
         margin-top: 1rem; }
   main .socialContacto ul {
@@ -427,7 +432,7 @@ footer {
             text-align: center; }
           body main .cajaFormulario .formulario .imputFormulario {
             text-align: left;
-            font-size: 5pt; }
+            font-size: 5pt;}
           body main .cajaFormulario .formulario .btn {
             margin-top: 1rem; }
       body main .contenedorServicios {
@@ -815,6 +820,11 @@ body {
       padding: 5px 10px;
       display: flex;
     }
+
+    .servicioEnCarrito{
+      display: flex;
+      flex-direction: row;
+    }
     .servicioEnCarrito p{
       color:  white;
     }
@@ -833,18 +843,36 @@ body {
 
     .boton-eliminarServicio {
       background-color: white;
-      color: #ff6961;
+      color: #ff0d00;
       border: none;
-      font-size: 20px;
-      right: 0px;
+      font-size: 15px;
+      margin-left: 10px;
+      width: 20px;
+      height: 20px;
+      padding: 0;
     }
 
-    .boton-cerrar {
+    .boton-cerrar{
+      display: flex;
+      width: 230px;
+      flex-direction: row;
+      margin-bottom: 1rem;
+
+    }
+    .boton-cerrar .boton {
       position: relative;
       background-color: white;
       color: #ff6961;
       border: none;
       font-size: 20px;
+      border-radius: 5px;
+      width: 30px;
+      right: 0px;
+      
+    }
+    .ServicioContratar {
+      color: white;
+      padding-left: 5px;
     }
     
     .boton-eliminarServicio:hover {

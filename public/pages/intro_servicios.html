@@ -105,8 +105,40 @@
             <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
             <!-- carrito desplegable con el detalle de los servicios en el carrito -->
             <div id="verCarrito" class="invisible" style="position:fixed;width:20%;background:#164984;right:0px;height:-webkit-fill-available;z-index:10;">
-                <button id="botonCerrar" class="btn waves-effect waves-ligth boton-cerrar z-index:11 ;">X</button>
+                <button id="botonCerrar" class="btn waves-effect waves-ligth boton-cerrar z-index:11 ;">
+                    <div class="boton" >X</div>
+                    <div class="ServicioContratar">  Servicio a Contratar: </div>
+                </button>
                 <div id="modal-carrito"> </div>
+                <div  class="cajaFormulario" >
+                    <form class="formulario" >
+                        <h3 class="tituloFormulario text-white">
+                            FORMULARIO DE CONTACTO
+                        </h3>
+                        <div class="imputFormulario" >
+                            <h3 class="titulosImput" >
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1"></label>
+                                    <input type="text" class="form-control" id="formularioNombre" placeholder="Nombre / Razon Social">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1"></label>
+                                    <input type="email" class="form-control" id="formularioEmail" placeholder="contacto@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1"></label>
+                                    <input type="number" class="form-control" id="formularioTelefono" placeholder="11-2222 2222">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1"></label>
+                                    <textarea class="form-control" id="formularioMensaje" rows="3" placeholder="Mensaje"></textarea>
+                                </div>
+                                <button type="button submit" class="btn btn-light">Enviar</button>
+                            </h3>
+                        </div>
+                    </form>
+                </div>
+
             </div>
             <!-- contenedor de tarjetas de servicios prestados -->
             <div id="contenedorServicios"  class="tarjetas"  > </div>
@@ -161,5 +193,7 @@
     <script src="../../src/app.js"></script>
     <script src="../../src/index.js"></script>
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

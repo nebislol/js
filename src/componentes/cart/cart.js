@@ -14,15 +14,36 @@ const validarServicioEnCarrito = (servicioId) => {
     if (!servicioRepetido) {
         const servicio = servicios.find(servicios => servicios.id == servicioId);
         carrito.push(servicio);
-        // //mostrar cantidad se servicios en el carrito
-        // const cantidadServicios = document.getElementById('contador-carrito');
-        // cantidadServicios.innerText = carrito.length
+        alertaServicioAgregado();
         pintarServicioCarrito(servicio);
         guardarCarritoStorage(carrito);
+
     } else {
-            alert("El servicio ya fue agregado al carrito");
+        alertaServicioRepetido();
     }
 };
+
+
+const alertaServicioAgregado = () => {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Servicio Agregado Correctamente',
+        showConfirmButton: false,
+        timer: 1000
+    })
+};
+
+const alertaServicioRepetido = () => {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'warning',
+        title: 'El Servicio ya se encuentra en el carrito',
+        showConfirmButton: false,
+        timer: 1500
+    })
+};
+
 
 
 const cantidadServiciosContador = (carrito) => {
@@ -40,7 +61,7 @@ const pintarServicioCarrito = (servicio) => {
     const div = document.createElement('div');
     div.classList.add('servicioEnCarrito');
     div.innerHTML =`
-        <p>Servicio a contratar: ${servicio.titulo}</p>
+        <p>${servicio.titulo}</p>
         <button class="btn waves-effect waves-ligth boton-eliminarServicio" value="${servicio.id}">X</button>
     `
     contenedor.appendChild(div);
@@ -64,7 +85,7 @@ const actualizarCarrito = (carrito) => {
         const div = document.createElement('div');
         div.classList.add('servicioEnCarrito');
         div.innerHTML =`
-            <p>Servicio a contratar: ${servicio.titulo}</p>
+            <p>${servicio.titulo}</p>
             <button class="btn waves-effect waves-ligth boton-eliminarServicio" value="${servicio.id}">X</button>
         `
         contenedor.appendChild(div);
